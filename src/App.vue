@@ -2,7 +2,8 @@
   <v-app>
     <v-main>
       <Navbar />
-      <Header />
+      <TopHeader />
+      <BottomHeader />
       <router-view></router-view>
     </v-main>
   </v-app>
@@ -10,11 +11,12 @@
 
 <script>
 import Navbar from '@/components/Navbar.vue'
-import Header from '@/components/Header.vue'
+import TopHeader from '@/components/TopHeader.vue'
+import BottomHeader from '@/components/BottomHeader.vue'
 export default {
   name: 'App',
     // register the components
-  components: { Navbar, Header },
+  components: { Navbar, TopHeader, BottomHeader },
 
   data: () => ({
     //
