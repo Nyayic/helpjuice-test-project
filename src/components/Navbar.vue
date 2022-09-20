@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-    <v-toolbar flat>
+    <v-toolbar flat class="my-0">
         <v-btn icon>
           <v-icon>mdi-chevron-double-right</v-icon>
         </v-btn>
@@ -18,7 +18,7 @@
         </v-btn>
         Editing
         </p>
-        <v-divider class="mx-1" vertical></v-divider>
+        <v-divider class="mx-2" vertical></v-divider>
         
         <p class="blue--text">
         Publishing Space

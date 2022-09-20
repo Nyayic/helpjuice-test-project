@@ -1,7 +1,8 @@
 <template>
   <v-app>
-    <Navbar />
     <v-main>
+      <Navbar />
+      <Header />
       <router-view></router-view>
     </v-main>
   </v-app>
@@ -9,10 +10,11 @@
 
 <script>
 import Navbar from '@/components/Navbar.vue'
+import Header from '@/components/Header.vue'
 export default {
   name: 'App',
     // register the components
-  components: { Navbar },
+  components: { Navbar, Header },
 
   data: () => ({
     //
