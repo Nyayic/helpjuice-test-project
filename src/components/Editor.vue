@@ -25,39 +25,47 @@
   };
   </script> -->
   <template>
-    <Mentionable
-      :keys="['@']"
-      :items="items"
-      offset="6"
-    >
-      <textarea v-model="text"/>
-    </Mentionable>
+    <v-container >
+        <v-row class="" justify="center" no-gutters>
+            <v-col lg="8">
+                <vue-editor v-model="content" :editor-toolbar="customToolbar"/>
+                <Mentionable :keys="['/']" :items="items">
+                    <textarea v-model="text"/>
+                </Mentionable>
+            </v-col>
+        </v-row>
+    </v-container>
   </template>
 
 <script>
-import { Mentionable } from 'vue-mention'
-
-
+import { VueEditor } from "vue2-editor";
+import { Mentionable } from 'vue-mention';
 
 export default {
+    components: {
+        VueEditor,
+        Mentionable,
+    },
     
-  components: {
-    Mentionable,
-  },
-  data () {
-    return {
-      text: '',
-      items: [
-        {
-          value: 'cat',
-          label: 'Mr Cat',
-        },
-        {
-          value: 'dog',
-          label: 'Mr Dog',
-        },
-      ],
+    data () {
+        return {
+            content: "<h1>This is my header</h1>",
+            customToolbar: [
+                ["bold", "italic", "underline"],
+            ],
+            
+            text: '',
+            items: [
+                {
+                    value: 'Heading 1',
+                    label: 'Heading !',
+                },
+                {
+                    value: 'Expandable Heading 1',
+                    label: 'Expandable Heading 1',
+                },
+            ],
+        }
     }
-  },
 }
 </script>

@@ -11,6 +11,8 @@
 </template>
 
 <script>
+ 
+
 import Navbar from '@/components/Navbar.vue'
 import TopHeader from '@/components/TopHeader.vue'
 import BottomHeader from '@/components/BottomHeader.vue'
@@ -20,6 +22,7 @@ export default {
   name: 'App',
     // register the components
   components: { Navbar, TopHeader, BottomHeader, Editor },
+  
 
   data: () => ({
     //
