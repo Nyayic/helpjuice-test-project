@@ -26,8 +26,9 @@ This is a test project by helpjuice to build a simple front-end UI based on figm
 ## Tools Used
 1. Vuejs : A Javascript framework for building User Interfaces and one paged applications.
 2. Vuetify : A material Design UI libraryy for Vuejs.
-3.
-4.
+3. Vue2Editor: A cutomizable and easy-to-use rich text editor powered by quill.js and vuejs.
+4. [Vue-Mention](https://vue-mention.netlify.app/): Asimple library for Vue Js to mention items.
+5. [Floating Vue](https://floating-vue.starpad.dev/): A simple library for poppers, tooltips and dropdowns powered by vuejs.
 5. Material Design icons (mdi): For all the Icons used in the project.
 
 See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -10,8 +10,11 @@
   "dependencies": {
     "@mdi/js": "^7.0.96",
     "core-js": "^3.8.3",
+    "floating-vue": "^1.0.0-beta.18",
     "vue": "^2.6.14",
+    "vue-mention": "^1.1.0",
     "vue-router": "^4.1.5",
+    "vue2-editor": "^2.10.3",
     "vuetify": "^2.6.0"
   },
   "devDependencies": {
