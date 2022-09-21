@@ -4,26 +4,23 @@
       <Navbar />
       <TopHeader />
       <BottomHeader />
-      <Editor/>
+      <Editor02/>
       <router-view></router-view>
     </v-main>
   </v-app>
 </template>
 
 <script>
- 
-
-import Navbar from '@/components/Navbar.vue'
-import TopHeader from '@/components/TopHeader.vue'
-import BottomHeader from '@/components/BottomHeader.vue'
-import Editor from '@/components/Editor.vue'
+  import Navbar from '@/components/Navbar.vue'
+  import TopHeader from '@/components/TopHeader.vue'
+  import BottomHeader from '@/components/BottomHeader.vue'
+  import Editor02 from '@/components/Editor02.vue';
+// import Editor from '@/components/Editor.vue'
 
 export default {
   name: 'App',
     // register the components
-  components: { Navbar, TopHeader, BottomHeader, Editor },
-  
-
+  components: { Navbar, TopHeader, BottomHeader, Editor02},
   data: () => ({
     //
   }),

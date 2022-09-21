@@ -30,7 +30,7 @@
             <v-col lg="8">
                 <vue-editor v-model="content" :editor-toolbar="customToolbar"/>
                 <Mentionable :keys="['/']" :items="items">
-                    <textarea v-model="text"/>
+                    <textarea v-model="text" class="mention-item"/>
                 </Mentionable>
             </v-col>
         </v-row>
@@ -57,6 +57,7 @@ export default {
             text: '',
             items: [
                 {
+                
                     value: 'Heading 1',
                     label: 'Heading !',
                 },

@@ -1,36 +1,34 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-    <v-toolbar flat class="my-0">
-        <v-btn icon>
-          <v-icon>mdi-chevron-double-right</v-icon>
-        </v-btn>
-        <v-btn icon>
-          <v-icon>mdi-book-open-blank-variant</v-icon>
-        </v-btn>
+  <v-toolbar flat class="my-0 text-sm-body-2">
+    <v-btn icon>
+      <v-icon small>mdi-chevron-double-right</v-icon>
+    </v-btn>
+    <v-btn icon>
+      <v-icon small>mdi-book-open-blank-variant</v-icon>
+    </v-btn>
 
-        <v-breadcrumbs :items="items" large></v-breadcrumbs>
+    <v-breadcrumbs :items="items"></v-breadcrumbs>
   
-        <v-spacer></v-spacer>
+    <v-spacer></v-spacer>
   
-        <p>
-        <v-btn icon>
-          <v-icon>mdi-lock-open-outline</v-icon>
-        </v-btn>
-        Editing
-        </p>
-        <v-divider class="mx-2" vertical></v-divider>
+    <p class="text--disabled">
+      <v-btn icon>
+        <v-icon small>mdi-lock-open-outline</v-icon>
+      </v-btn>
+      Editing
+    </p>
+    <v-divider class="mx-4" vertical  width="100"></v-divider>
         
-        <p class="blue--text">
-        Publishing Space
-        <v-btn icon>
-        <v-icon>mdi-chevron-down</v-icon>
-        </v-btn>
-        </p>
-        
-        
-      </v-toolbar>
+    <p class="blue--text text-sm-body-2">
+      Publish Space
+      <v-btn icon>
+        <v-icon small>mdi-chevron-down</v-icon>
+      </v-btn>
+    </p>
+  </v-toolbar>
     
-  </template>
+</template>
 
 
 <script>

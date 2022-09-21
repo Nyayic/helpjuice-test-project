@@ -2,22 +2,10 @@ import Vue from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify'
 
-import {
-  // Directives
-  VTooltip,
-  VClosePopper,
-  // Components
-  Dropdown,
-  Tooltip,
-  Menu
-} from 'floating-vue'
+import CKEditor from '@ckeditor/ckeditor5-vue2';
 
-Vue.directive('tooltip', VTooltip)
-Vue.directive('close-popper', VClosePopper)
+Vue.use( CKEditor );
 
-Vue.component('VDropdown', Dropdown)
-Vue.component('VTooltip', Tooltip)
-Vue.component('VMenu', Menu)
 Vue.config.productionTip = false
 
 new Vue({
