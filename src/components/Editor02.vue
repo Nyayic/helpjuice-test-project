@@ -11,17 +11,17 @@
 
 <script>
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-
     export default {
         name: 'app',
         data() {
             return {
                 editor: ClassicEditor, 
-                editorData: '',
+                editorData: {
+        
+                },
                 editorConfig: {
                     // The configuration of the editor.
-                    toolbar: [ 'heading 1' ],
-                   
+                    toolbar: '',
                 },
                
             };
