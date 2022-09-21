@@ -18,9 +18,9 @@
       </v-btn>
       Editing
     </p>
-    <v-divider class="mx-4" vertical  width="100"></v-divider>
+    <v-divider class="mx-4 divider" inset vertical  width="100"></v-divider>
         
-    <p class="blue--text text-sm-body-2">
+    <p class="publish text-sm-body-2">
       Publish Space
       <v-btn icon>
         <v-icon small>mdi-chevron-down</v-icon>
@@ -54,3 +54,11 @@
     }),
   }
 </script>
+<style>
+  .publish{
+    color: #058DDA !important;
+    font-weight: 400;
+  }
+ 
+ 
+</style>

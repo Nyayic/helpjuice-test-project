@@ -3,24 +3,24 @@
   <v-container >
     <v-row  justify="center" no-gutters>
       <v-col lg="8">
-        <v-card class="mx-auto" light flat outlined >
+        <v-card class="mx-auto card"  flat outlined >
           <v-app-bar dense flat>
             <v-btn icon class="mx-1">
               <v-icon small>mdi-format-paragraph</v-icon>
             </v-btn>
-            <v-divider vertical></v-divider>
+            <v-divider vertical inset></v-divider>
             <v-btn icon>
                 <v-icon small>mdi-clock-outline</v-icon> 
             </v-btn> 
             0 Mins
         
-            <v-divider class="mx-1"  vertical></v-divider>
+            <v-divider vertical inset class="mx-2"></v-divider>
            
             <v-avatar size="28" class="mx-2">
               <img src="../assets/avatar.png" alt="avatar">
             </v-avatar>
         
-            <v-divider class="mx-1" vertical></v-divider>
+            <v-divider inset class="mx-2" vertical></v-divider>
         
             <v-btn icon>
                 <v-icon small>mdi-arrow-bottom-left-thin</v-icon> 
@@ -40,3 +40,9 @@
     </v-row>
   </v-container>
 </template>
+<style>
+  .theme--light.v-app-bar.v-toolbar.v-sheet {
+	background-color: #fff !important;
+}
+
+</style>
