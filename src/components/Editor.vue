@@ -28,9 +28,9 @@
     <v-container >
         <v-row class="" justify="center" no-gutters>
             <v-col lg="8">
-                <vue-editor v-model="content" :editor-toolbar="customToolbar"/>
+                <!-- <vue-editor v-model="content" :editor-toolbar="customToolbar"/> -->
                 <Mentionable :keys="['/']" :items="items">
-                    <textarea v-model="text" class="mention-item"/>
+                    <vue-editor v-model="text" :editor-toolbar="customToolbar" class="mention-item" />
                 </Mentionable>
             </v-col>
         </v-row>
@@ -49,15 +49,14 @@ export default {
     
     data () {
         return {
-            content: "<h1>This is my header</h1>",
+            content: "",
             customToolbar: [
-                ["bold", "italic", "underline"],
+                [""],
             ],
             
             text: '',
             items: [
                 {
-                
                     value: 'Heading 1',
                     label: 'Heading !',
                 },

@@ -15,8 +15,7 @@
   import TopHeader from '@/components/TopHeader.vue'
   import BottomHeader from '@/components/BottomHeader.vue'
   import Editor02 from '@/components/Editor02.vue';
-// import Editor from '@/components/Editor.vue'
-
+  
 export default {
   name: 'App',
     // register the components
@@ -30,7 +29,7 @@ export default {
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-  body{
+  body, html{
     font-family: 'Inter', sans-serif;
   }
   .v-divider{

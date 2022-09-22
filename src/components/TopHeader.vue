@@ -5,7 +5,7 @@
       <v-col lg="8">
         <v-card class="mx-auto card"  flat outlined >
           <v-app-bar dense flat>
-            <v-btn icon class="mx-1">
+            <v-btn icon class="mx-0">
               <v-icon small>mdi-format-paragraph</v-icon>
             </v-btn>
             <v-divider vertical inset></v-divider>
@@ -43,6 +43,10 @@
 <style>
   .theme--light.v-app-bar.v-toolbar.v-sheet {
 	background-color: #fff !important;
+}
+.v-icon.notranslate.mdi.mdi-format-paragraph.theme--light {
+	background: #d9f9e6;
+	border-radius: 4px;
 }
 
 </style>
